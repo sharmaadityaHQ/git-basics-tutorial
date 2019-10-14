@@ -44,4 +44,21 @@ Till now we worked in a single branch called `master`. Git allows us to create b
 #### Git Commands  
 **1.**`git branch` - It is used to find the branch which you are on. The `*` shows you what branch you are on.  
 **2.**`git branch new_branch` - This is used to create a new branch. Name your branch something that describes the purpose of the branch. Branch names cannot contain whitespaces.  
-**3.**`git checkout branch_name` - 
+**3.**`git checkout branch_name` - You can switch between branches using this command. Once you switch to a branch and make commits on that branch they have no impact on `master` branch. You can continue your workflow while `master` branch stays intact.  
+**4.**`git merge branch_name` - This is used to include all the changes made to the `new_branch` on the `master` branch. First switch to `master` branch and then use `git merge new_branch`.  
+**5.**`git branch -d branch_name` - After a branch has been integrated into `master`, it has served its purpose and can be deleted. This command will delete the specified branch from your git project.  
+### GIT COLLABORATION  
+#### Introduction  
+We have worked on git as a single user till now. Git offers a suite of collaboration tools to make working with others on a project easier. This is done by using `remotes`. A `remote` is a shared Git repository that allows multiple collaborators to work on the same Git project from different locations. Collaborators work on the project independently, and merge changes together when they are ready to do so. It lives outside your Git project folder. Remotes can live on the web, on a shared network or even in a separate folder on your local computer. 
+#### Git Commands  
+**1.**`git clone remote_location clone_name` - This command creates a copy of an existing repository to your local machine.  
+Here:-  
+
+- `remote_location` tells Git where to go to find the remote. This could be a web address, or a filepath.  
+- `clone_name` is the name you give to the directory in which Git will clone the repository.  
+
+**2.**`git remote -v` - Behind the scenes Git gives the remote address the name `origin`, so that you can refer to it more conveniently. We can see a list of a Git project’s remotes with this command.  
+**3.**`git fetch` - If changes have been made to the remote then you can use this command to bring the changes down to your local copy. This command will not merge changes from the remote into your local repository. It brings those changes onto a remote branch(`origin/master`).  
+**4.**`git merge origin/master` - This is used after `git fetch` to  integrate `origin/master` into your local `master` branch.  
+**5.**`git push origin your_branch_name` - This pushes a local branch to the `origin` remote.  
+**6.**`git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git` - This is used to specify a new remote upstream repository that will be synced with the fork. You can verify the new upstream repository you've specified for your fork using `git remote -v`.
