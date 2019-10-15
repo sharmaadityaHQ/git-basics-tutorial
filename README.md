@@ -1,6 +1,23 @@
 This is a basic git tutorial made exclusively for first year SMVDU students.  
 ### DEFINITION
 Git is a software that allows you to keep track of changes made to a project over time. Git works by recording the changes you make to a project, storing those changes, then allowing you to reference them as needed.  
+#### Setting your username in Git  
+**1.** Open Terminal  
+**2.**`$git config --global user.name "Aditya Sharma"`  
+**3.** Confirm that you have set the Git username correctly:-   
+```
+$ git config --global user.name
+  Aditya Sharma
+```  
+#### Setting your commit email address  
+**1.** Open Terminal  
+**2.** Set an email address in Git. You can use your GitHub-provided no-reply email address or any email address:-  
+`$ git config --global user.email "email@example.com"`  
+**3.** Confirm that you have set the email address correctly in Git:-  
+```
+$ git config --global user.email
+  email@example.com
+```
 ### BASIC GIT WORKFLOW  
 #### Git Workflow
 ![](Git.png)
