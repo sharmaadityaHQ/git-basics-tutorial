@@ -1,0 +1,14 @@
+Like everybody knows in Git Universe there are two kung fu schools:
+- merge
+- rebase
+
+Each approach is good in its own way, but when there are a lot of developers working on the same project git log could be very confusing.
+So in this way it's good to choose rebase (cause git-history becomes linear).
+But it was very hard for me to start use rebase because of two reasons:
+- it wasn't obvious that if needed to transfer (rebase) some commits to the main branch you should stay on that current branch (not on the main)
+- I scared to loose previous commits (especially using interactive rebase with squashing commits)
+
+But there is a good trick to overcome. It is very simple and gives you the opportunity to not be afraid of making mistakes.
+When it is time to make rebase (usual or interactive) firstly it's good to make one more backup branch at this point.
+And even if something will go wrong there is a backup with all previous history.
+Hope it would be useful! :)
