@@ -1,0 +1,15 @@
+I have been using git from last 6 months. My best tip is "First learn Git!"
+
+
+There is very funny story of mine:
+
+I didn't knew how to revert back changes in Git. 
+To revert changes I aleays used git checkout <code>!
+One day when I used my head got deatached and I had no idea about that and started to code in deatached head.
+When I wrote around 150 lines of code in different file. I was trying to commit changes but it was not working.
+I searched on Google and did what Stack Overflow said and lost my changes!!!!
+
+Then I first watched the complete course of git on Youtube then I am doing pretty good in it.
+
+
+Sorry, For my English!!
