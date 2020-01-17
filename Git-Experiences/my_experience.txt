@@ -1,0 +1,8 @@
+From last one month I  have been using git. I learn about it from youtube. Till now it had been a good experience to use git.
+
+My best tip will be  "start from the basics"
+
+
+$ git config --global color.ui true   this command is used to change font color on gitbash
+
+My problem is that I am not be able to connect my IDE with github
