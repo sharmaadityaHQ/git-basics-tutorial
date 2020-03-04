@@ -1,0 +1,3 @@
+We can clone a repository in our local machine by using the command (git clone remote_location clone_name)
+where remote_location means the file path or a web address of the repository that you have forked. clone_name 
+is simply the name of the folder that you want in your local machine.
